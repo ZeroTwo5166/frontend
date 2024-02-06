@@ -51,7 +51,6 @@ export const ace_themes = {
     'Vibrant Ink': 'vibrant_ink'
 };
 
-
 export const allAceLanguages = {
     'Actionscript': 'actionscript',
     'Apache_conf': 'apache_conf',
@@ -173,5 +172,19 @@ export interface userBanner {
 
 export interface projectModel {
     projectname : string,
-    userid : any
+    userid : any,
+    code: any
+}
+
+export interface projectDTO {
+    projectId : any,
+    projectName : string,
+    room :string,
+    code : string
+}
+
+export interface userDTO {
+    user : string,
+    room : string,
+    code : string
 }

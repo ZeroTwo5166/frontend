@@ -38,6 +38,10 @@ export class ApiService {
     return this.http.post(url, { title, code} )
   }
 
+  getIdByUsername(username : string){
+    return this.http.get(`${this.baseUrl}/getidbyusername/${username}`);
+  }
+
   insertCodeToSql(title: string, code: string): Observable<any> {
     const url = `https://localhost:7235/api/code/insert`; // Adjust the actual insert API endpoint
     const payload = { title, code };

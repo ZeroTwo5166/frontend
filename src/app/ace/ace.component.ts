@@ -81,7 +81,7 @@ export class AceComponent implements OnInit, OnDestroy{
         if(!this.isUpdatingEditor){
           const updatedCode = this.editor.getValue();
           this.code = updatedCode;
-          this.documentService.broadcastDocumentUpdate(this.code);
+          //this.documentService.broadcastDocumentUpdate(this.code);
           // Start or reset the auto-save timer when the document is changed
           //this.startAutoSaveTimer();
         }

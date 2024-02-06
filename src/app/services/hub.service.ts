@@ -16,5 +16,13 @@ export class HubService {
     return this.http.get(url);
   }
 
+  disconnectUser(username : string){
+    const url = `${this.baseURL}/disconnectUser/${username}`;
+    return this.http.post(url, {}).subscribe(
+      (response:any) => console.log(response.message),
+      error => console.error('Error disconnecting user:', error)
+    );
+  }
+
 
 }

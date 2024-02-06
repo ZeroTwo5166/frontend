@@ -24,6 +24,9 @@ import { AceComponent } from './ace/ace.component';
 import { LoginTestComponent } from './login-test/login-test.component';
 import { CreateProjectComponent } from './create-project/create-project.component';
 import { JoinProjectComponent } from './join-project/join-project.component';
+import { DeleteConfirmationComponent } from './delete-confirmation/delete-confirmation.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { EditProjectComponent } from './edit-project/edit-project.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { JoinProjectComponent } from './join-project/join-project.component';
     LoginTestComponent,
     CreateProjectComponent,
     JoinProjectComponent,
+    DeleteConfirmationComponent,
+    FilterPipe,
+    EditProjectComponent,
   ],
   imports: [
     BrowserModule,

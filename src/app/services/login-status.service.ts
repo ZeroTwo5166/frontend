@@ -15,7 +15,7 @@ export class LoginStatusService {
   constructor(private apiService : ApiService) { 
   }
 
-  //This last paramter is optional, 
+  //This last parameter is optional, 
   //If it is provided, use that as profile pic --> This is useful when login via google
   //If it is not provided, use the username to make an api call to backend > get the image in useable format
   setLoginStatus(isLoggedIn : boolean, username : string, isProfilePictureGiven? : string) : void {
@@ -82,4 +82,5 @@ export class LoginStatusService {
       }
     })
   }
+
 }
